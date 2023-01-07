@@ -1,0 +1,8 @@
+FROM openjdk
+WORKDIR /app
+COPY . .
+RUN mvn clean install
+RUN mvn spring-boot:run
+
+
+# ALTERAR E DEIXAR SO O JAR 
